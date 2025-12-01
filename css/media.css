@@ -1,0 +1,199 @@
+@media (max-width: 1024px) {
+	.container {
+		padding: 0 30px;
+	}
+
+	.section {
+		padding: 15px 0;
+	}
+
+	.section--dark {
+		padding-top: 50px;
+	}
+
+	.header-nav__list {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 80px;
+		right: 20px;
+		width: 260px;
+		padding: 30px 25px;
+		gap: 25px;
+		border-radius: 8px;
+		font-size: 26px;
+		background: var(--color-light);
+		color: black;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+		z-index: 9999;
+	}
+
+	.header-nav__list.active {
+		display: flex;
+	}
+
+	.burger {
+		display: flex;
+	}
+
+	.hero__title {
+		margin: 30px 0;
+		font-size: 40px;
+	}
+
+	.hero__subtitle {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+
+	.hero__btn {
+		padding: 15px 20px;
+		margin-top: 15px;
+	}
+
+	.concerts__row {
+		grid-template-columns: 1fr 100px 150px 150px;
+		padding: 15px 20px;
+	}
+
+	.concerts__title {
+		padding: 15px 20px;
+		font-size: 24px;
+	}
+
+	.concerts__cell {
+		font-size: 14px;
+	}
+
+	.btn.buy-ticket-btn {
+		padding: 8px 12px;
+		font-size: 14px;
+	}
+
+	.history__title {
+		margin-bottom: 15px;
+	}
+
+	.history__image {
+		display: block;
+		margin: 0 auto 15px;
+		float: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 20px 20px;
+	}
+
+	.section--dark {
+		padding-top: 40px;
+	}
+
+	.hero__title {
+		margin: 15px 0;
+		font-size: 28px;
+	}
+
+	.hero__subtitle {
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+
+	.hero__text {
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	.hero__btn {
+		padding: 15px 20px;
+		margin-top: 15px;
+	}
+
+	.concerts__row {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 15px;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.concerts__row--head {
+		display: none;
+	}
+
+	.concerts__cell {
+		display: flex;
+		justify-content: flex-start;
+		padding: 5px;
+		font-size: 14px;
+	}
+
+	.concerts__cell:first-child::before {
+		content: 'Місто / Заклад:';
+		font-weight: 700;
+		margin-right: 5px;
+	}
+
+	.concerts__cell:nth-child(2)::before {
+		content: 'К-сть місць:';
+		font-weight: 700;
+		margin-right: 5px;
+	}
+
+	.concerts__cell:nth-child(3)::before {
+		content: 'Дата і час:';
+		font-weight: 700;
+		margin-right: 5px;
+	}
+
+	.concerts__cell {
+		justify-content: flex-start;
+		margin-top: 5px;
+	}
+
+	.concerts__title {
+		padding: 10px 15px;
+		font-size: 20px;
+	}
+
+	.btn.buy-ticket-btn {
+		padding: 10px 0;
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.history__image {
+		display: block;
+		margin: 0 auto 15px;
+		width: 100%;
+		float: none;
+	}
+
+	.contact__inner {
+		flex-direction: column;
+	}
+
+	.contact-form {
+		grid-template-columns: 1fr;
+	}
+
+	.footer__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.social-links a {
+		margin-left: 0px;
+	}
+
+	.footer__contacts {
+		text-align: center;
+	}
+
+	.footer__mail {
+		text-align: center;
+	}
+}
